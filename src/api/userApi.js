@@ -1,8 +1,7 @@
-async function userAuthentication() {
+async function userAuthentication(payload) {
   return {
-    username: 'Virag',
+    username: payload.username,
     redirectToHome: true,
-    password: 'abcd',
     designation: 'Software Engineer',
     company: 'Talentica Software'
   };
