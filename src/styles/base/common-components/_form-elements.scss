@@ -1,0 +1,52 @@
+//.search-input-group-wrapper{
+//  .form-control{
+//    padding-left: 0;
+//    &:hover,&:active,&:focus{
+//      outline: none;
+//      box-shadow: none;
+//      border-color: inherit;
+//    }
+//  }
+//}
+.search-input-group {
+  position: relative;
+  margin-bottom: 0;
+
+  &:before {
+    @include icon-search();
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: $gray-500;
+  }
+
+  > .form-control {
+    padding-left: rem(34px);
+    font-weight: 300;
+    font-size: rem(12px);
+    line-height: 22px;
+  }
+}
+
+.form-control {
+  font-size: 0.9375rem;
+  &:disabled {
+    border-color: $gray-two;
+  }
+}
+
+.form-label {
+  color: $input-label-color;
+}
+
+//Custom Select
+
+.custom-select {
+  font-weight: 300;
+}
+
+//Textarea Resize Disable
+textarea {
+  resize: none;
+}

@@ -1,0 +1,69 @@
+.custom-select {
+}
+.custom-control-label {
+  line-height: 1.5rem;
+  &::before {
+    border: 1px solid $gray-three;
+  }
+  @include hover-focus-active {
+    color: $white;
+    &::before {
+      background-color: $white;
+      border-color: $white;
+    }
+  }
+}
+.custom-control-input {
+  &:checked ~ .custom-control-label {
+    color: $white;
+    &::before {
+      border-color: $gray-six;
+    }
+  }
+
+  &:disabled,
+  &.disabled {
+    ~ .custom-control-label {
+      &::before {
+        background-color: $white;
+        border-color: $gray-three;
+      }
+      cursor: not-allowed;
+    }
+
+    &:checked ~ .custom-control-label {
+      &::before {
+        border-color: $white;
+      }
+    }
+  }
+}
+
+//Checkbox : Hover When checked!
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label {
+  &:before {
+    border-color: $white;
+  }
+  @include hover {
+    &:before {
+      background-color: $white;
+    }
+
+    &:after {
+      background-image: $custom-checkbox-indicator-icon-checked-hover;
+    }
+  }
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label {
+  @include hover {
+    &:before {
+      background-color: $white;
+      border-color: $white;
+    }
+
+    &:after {
+      background-image: $custom-radio-indicator-icon-checked-hover;
+    }
+  }
+}

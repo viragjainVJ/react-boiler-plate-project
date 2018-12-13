@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'segoeui';
+  font-style: normal;
+  //font-weight: 100;
+  src: url('#{$font-family-url}/base-font/segoeuil.ttf') format('ttf'), url('#{$font-family-url}/base-font/segoeuil.woff') format('woff'),
+    url('#{$font-family-url}/base-font/segoeuil.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SegMDL2';
+  font-style: normal;
+  //font-weight: 100;
+  src: url('#{$font-family-url}/base-font/SegMDL2.ttf') format('ttf'), url('#{$font-family-url}/base-font/SegMDL2.woff') format('woff'),
+    url('#{$font-family-url}/base-font/SegMDL2.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'segoeuib';
+  font-style: normal;
+  //font-weight: 100;
+  src: url('#{$font-family-url}/base-font/segoeuib.ttf') format('ttf'), url('#{$font-family-url}/base-font/segoeuib.woff') format('woff'),
+    url('#{$font-family-url}/base-font/segoeuib.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'segoeuil';
+  font-style: normal;
+  //font-weight: 100;
+  src: url('#{$font-family-url}/base-font/segoeuil.ttf') format('ttf'), url('#{$font-family-url}/base-font/segoeuil.woff') format('woff'),
+    url('#{$font-family-url}/base-font/segoeuil.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'segoeuisl';
+  font-style: normal;
+  //font-weight: 100;
+  src: url('#{$font-family-url}/base-font/segoeuisl.ttf') format('ttf'), url('#{$font-family-url}/base-font/segoeuisl.woff') format('woff'),
+    url('#{$font-family-url}/base-font/segoeuisl.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'seguisb';
+  font-style: normal;
+  //font-weight: 100;
+  src: url('#{$font-family-url}/base-font/seguisb.ttf') format('ttf'), url('#{$font-family-url}/base-font/seguisb.woff') format('woff'),
+    url('#{$font-family-url}/base-font/seguisb.woff2') format('woff2');
+}
