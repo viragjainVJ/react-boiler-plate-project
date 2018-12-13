@@ -1,7 +1,7 @@
 import React from 'react';
 import LoginPage from '../containers/pages/loginPage';
 import App from '../components/app/App';
-import Home from '../components/home/Home';
+import HomePage from '../containers/pages/homePage';
 
 const routes = [
   {
@@ -20,7 +20,7 @@ const routes = [
     name: 'user-page',
     action: context => (
       <App context={context}>
-        <Home context={context} />
+        <HomePage context={context} />
       </App>
     )
   },

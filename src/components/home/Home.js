@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import Header from './Header';
+import Books from './Books';
 
 class Home extends Component {
   render() {
     const { username, designation, company } = this.props.user;
     return (
       <div>
-        {username ? <h1>Welcome {username} !!!</h1> : ''}
-        <div>{designation}</div>
-        <div>{company}</div>
+        <Header user={this.props.user} />
+        <div style={{ width: '100%', height: '100vh', backgroundColor: 'white' }}>
+          <div style={{ color: 'black', display: 'inline-block' }}>
+            <Books />
+          </div>
+          <button style={{ position: 'relative', float: 'right', backgroundColor: 'red', color: 'white', borderRadius: '50%', height: '50px', width: '50px' }}>+</button>
+        </div>
       </div>
     );
   }
 }
 
-function mapStateToProps(state) {
-  return { user: state.user };
-}
-
-export default connect(mapStateToProps)(Home);
+export default Home;

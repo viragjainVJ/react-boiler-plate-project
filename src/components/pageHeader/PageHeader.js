@@ -12,7 +12,7 @@ class PageHeader extends Component {
     };
   }
   render() {
-    return <div />;
+    return <div style={{ height: '45px', backgroundColor: '#28AADF', textAlign: 'center', fontSize: '2em' }}>Talentica Software</div>;
   }
 }
 
