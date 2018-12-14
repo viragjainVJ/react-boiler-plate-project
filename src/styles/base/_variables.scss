@@ -53,17 +53,16 @@ $container-max-widths: (
 ) !default;
 
 // Grid columns
-
 // Set the number of columns and specify the width of the gutters.
 $grid-columns: 24 !default;
 $grid-gutter-width: 30px !default;
 // Variables
-$g
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
-//
+$g
 // Color system
-//
+
+
 // stylelint-disable
 $white: #fff !default;
 $gray-100: $smoke-white !default; // #f8f9fa !default;
@@ -146,9 +145,6 @@ $theme-colors: map-merge(
 // stylelint-enable
 $theme-heading-color: map_get($theme_colors, 'dark'); // #58585b;
 // Fonts
-
-
-
 // Font, line-height, and color for body text, headings, and more.
 $font-size-base: 1rem; // Assumes the browser default, typically `16px`
 // $font-size-lg:                ($font-size-base * 1.25) !default;
@@ -157,12 +153,10 @@ $font-size-button: 14px;
 $font-family-base: $font-brand;
 $line-height-base: 1.5 !default;
 $font-weight-extra-light: 100;
-
 $font-weight-semi-light: 200;
 $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
-$f
 $h1-font-size: rem(20px);
 $h2-font-size: rem(18px);
 $h3-font-size: rem(16px);
@@ -172,7 +166,6 @@ $h6-font-size: rem(12px);
 $headings-font-weight: 100;
 $headings-color: $page-heading-color;
 // Buttons + Forms
-$h
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 $input-btn-padding-y: rem(5px);
 $input-btn-padding-x: rem(16px);
@@ -182,7 +175,6 @@ $input-btn-focus-color: transparent;
 $input-btn-focus-box-shadow: 0 none;
 $input-label-color: #ffffff;
 // Forms elements
-$input-
 $input-color: #ffffff;
 $input-bg: #000000;
 $input-border-color: #676774;
@@ -198,8 +190,6 @@ $input-disabled-bg: $gray-200;
 $custom-control-indicator-bg: $white;
 $custom-control-indicator-focus-box-shadow: 0 none;
 // Buttons
-
-
 // For each of Bootstrap's buttons, define text, background, and border color.
 $btn-padding-y: rem(7px);
 $btn-padding-x: 1.875rem; // rem(16px);
@@ -210,7 +200,6 @@ $btn-focus-width: 0;
 $btn-focus-box-shadow: none;
 $btn-active-box-shadow: none;
 // Links
-$b
 // Style anchor elements.
 // $link-decoration:           none !default;
 // $link-hover-color:          darken($link-color, 15%) !default;
@@ -220,13 +209,10 @@ $link-hover-decoration: none;
 // custom
 $dropdown-hover-color: $smoke-white;
 $dropdown-item-color: $gray-one;
-
-
 // Dropdown menu container and contents.
 $dropdown-min-width: rem(108px);
 $dropdown-padding-y: rem(1px);
 $dropdown-spacer: rem(4px);
-
 // $dropdown-bg:                       $white !default;
 $dropdown-border-color: $gray-two;
 $dropdown-border-radius: rem(4px);
@@ -271,7 +257,6 @@ $custom-select-height: rem(30px);
 // Pagination
 $pagination-padding-y: rem(4.5px);
 $pagination-padding-x: rem(7.8px);
-
 $pagination-line-height: 16px;
 //
 $pagination-color: map_get($theme-colors, 'dark');
@@ -281,7 +266,6 @@ $pagination-border-width: 0;
 //
 // $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 // $pagination-focus-outline:          0 !default;
-$p
 $pagination-hover-color: $white;
 $pagination-hover-bg: $pagination-active-hover-color;
 // $pagination-hover-border-color:     $gray-300 !default;
@@ -318,13 +302,11 @@ $modal-md: 640px !default;
 $modal-sm: 300px !default;
 // $modal-transition:                  transform .3s ease-out !default;
 // Tables
-
-
-
 // Customizes the `.table` component with basic values, each used across all table variations.
 $table-cell-padding: rem(7px 20px);
 // $table-cell-padding-sm:       .3rem !default;
-//
+
+
 // $table-bg:                    transparent !default;
 $table-accent-bg: $table-even-bg-color;
 $table-hover-bg: $table-tr-hover-bg;
@@ -332,7 +314,6 @@ $table-hover-bg: $table-tr-hover-bg;
 //
 // $table-border-width:          $border-width !default;
 $table-border-color: $gray-400;
-$t
 $table-head-bg: $smoke-white;
 // $table-head-color:            $gray-700 !default;
 //

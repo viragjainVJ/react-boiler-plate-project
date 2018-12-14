@@ -4,6 +4,7 @@ import { routerMiddleware, routerReducer } from '../router/router';
 import { sagaMiddleware } from './sagas/saga';
 import authReducer from './reducers/authReducer';
 import userReducer from './reducers/userReducer';
+import bookReducer from './reducers/bookReducer';
 
 import appConfig from '../appConfig';
 import { identity } from 'lodash';
@@ -12,7 +13,8 @@ const configureStore = (initialState = {}) => {
   const rootReducer = combineReducers({
     router: routerReducer,
     auth: authReducer,
-    user: userReducer
+    user: userReducer,
+    book: bookReducer
   });
 
   // Create the store
