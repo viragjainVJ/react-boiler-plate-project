@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Add from './Add';
 
-class BookList extends Component {
+class Book extends Component {
   onDelete = () => {
     this.props.deleteBook(this.props.book.id);
   };
@@ -28,4 +28,4 @@ class BookList extends Component {
   }
 }
 
-export default BookList;
+export default Book;

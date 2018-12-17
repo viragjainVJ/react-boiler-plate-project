@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BookList from './BookList';
+import Book from './Book';
 
 class Books extends Component {
   render() {
@@ -9,7 +9,7 @@ class Books extends Component {
         {this.props.books.length > 0 &&
           this.props.books.map(book => (
             <div key={book.id}>
-              <BookList key={book.id} book={book} deleteBook={this.props.deleteBook} updateBookList={this.props.updateBookList} />
+              <Book key={book.id} book={book} deleteBook={this.props.deleteBook} updateBookList={this.props.updateBookList} />
             </div>
           ))}
       </div>
