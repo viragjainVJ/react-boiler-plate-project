@@ -24,7 +24,7 @@ class ModalPanel extends React.Component {
         <Button color="danger" onClick={this.toggle}>
           {username}
         </Button>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+        <Modal isOpen={this.state.modal} toggle={this.toggle}>
           <ModalHeader toggle={this.toggle}>{username}</ModalHeader>
           <ModalBody>
             <h3>Designation: {designation}</h3>

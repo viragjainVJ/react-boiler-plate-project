@@ -1,7 +1,7 @@
 import { createActions } from 'redux-actions';
 import createFetchActions from './createFetchActions';
 
-const { editBook, updateBookList } = createActions({}, 'ADD_BOOK', 'EDIT_BOOK', 'UPDATE_BOOK_LIST');
+const { updateBookList } = createActions({}, 'ADD_BOOK', 'UPDATE_BOOK_LIST');
 
 const fetchBookActions = createFetchActions('BOOK', {
   request_payload: book => ({
@@ -9,4 +9,4 @@ const fetchBookActions = createFetchActions('BOOK', {
   })
 });
 
-export { fetchBookActions, editBook, updateBookList };
+export { fetchBookActions, updateBookList };

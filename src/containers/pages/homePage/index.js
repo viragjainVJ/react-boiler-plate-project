@@ -1,6 +1,6 @@
 import HomePage from './HomePage';
 import { connect } from 'react-redux';
-import { fetchBookActions, editBook, updateBookList } from '../../../store/actions/bookActions';
+import { fetchBookActions, updateBookList } from '../../../store/actions/bookActions';
 
 const mapStateToProps = state => ({
   user: state.user,
@@ -10,7 +10,6 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = {
   fetchBookActions: fetchBookActions.request,
   deleteBook: fetchBookActions.cancel,
-  editBook: editBook,
   updateBookList: updateBookList
 };
 

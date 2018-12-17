@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Books from './Books';
-import PostBook from './PostBook';
+import Add from './Add';
 
 class Home extends Component {
   render() {
-    const { user, fetchBookActions, books, deleteBook, editBook, updateBookList } = this.props;
+    const { user, fetchBookActions, books, deleteBook, updateBookList } = this.props;
     return (
       <div>
         <Header user={user} />
         <div style={{ width: '100%', height: '100vh', backgroundColor: 'white' }}>
-          <PostBook fetchBookActions={fetchBookActions} />
-          <div style={{ color: 'black', display: 'inline-block' }}>
-            <Books books={books} deleteBook={deleteBook} editBook={editBook} updateBookList={updateBookList} />{' '}
-          </div>
-          <button style={{ position: 'relative', float: 'right', backgroundColor: 'red', color: 'white', borderRadius: '50%', height: '50px', width: '50px' }}>+</button>
+          <table style={{ width: '100%', color: 'black' }}>
+            <tbody>
+              <tr>
+                <td>
+                  <Books books={books} deleteBook={deleteBook} updateBookList={updateBookList} />
+                </td>
+                <td style={{ float: 'right', padding: '15px' }}>
+                  <Add modalTitle={'Add'} fetchBookActions={fetchBookActions} />
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     );
