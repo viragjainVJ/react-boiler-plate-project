@@ -18,17 +18,11 @@ class Login extends Component {
     }
     this.setState({ submitted: true });
     if (this.state.username) {
-      {
-        console.log('handleSubmit', this.props.fetchAuthTokenActionsRequest);
-      }
-      this.props.fetchAuthTokenActionsRequest(this.state.username, 'abcd');
-      {
-        console.log('handleSubmit2', this.props.loginUser);
-      }
+      //Action called to make an API call
+      this.props.fetchUserActions(this.state.username, 'abcd');
+      //Action called to redirect user after succesful login
       this.props.loginUser();
     }
-
-    //this.setState({username: ''});
   };
 
   renderButton() {

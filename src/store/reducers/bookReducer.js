@@ -18,6 +18,7 @@ const bookReducer = handleActions(
       });
     },
 
+    // Used to delete the book Entry
     [fetchBookActions.cancelled](state, { payload }) {
       return state.filter(book => book.id !== payload);
     },
@@ -26,6 +27,7 @@ const bookReducer = handleActions(
       return [...state];
     },
 
+    // Used to add the new entry to the store
     [fetchBookActions.succeeded](state, { payload }) {
       return [...state, { ...payload.book }];
     },

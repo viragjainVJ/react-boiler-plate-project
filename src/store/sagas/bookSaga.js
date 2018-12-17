@@ -11,7 +11,7 @@ function* bookSaga() {
     }
   }
 
-  function* fetchCancelledSaga({ payload }) {
+  function* fetchDeletionSaga({ payload }) {
     try {
       yield put(fetchBookActions.cancelled(payload));
     } catch (e) {
@@ -20,7 +20,7 @@ function* bookSaga() {
   }
 
   yield takeLatest(fetchBookActions.request, fetchRequestedSaga);
-  yield takeLatest(fetchBookActions.cancel, fetchCancelledSaga);
+  yield takeLatest(fetchBookActions.cancel, fetchDeletionSaga);
 }
 
 export default bookSaga;

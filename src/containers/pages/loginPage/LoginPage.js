@@ -7,7 +7,7 @@ const LoginPage = ({ authToken, validateAuth, fetchUserActions, loginUser }) => 
     {authToken && validateAuth({ redirectToHome: true }) && <h4> {intl.get('app.loading')}</h4>}
     {!authToken && validateAuth({ redirectToHome: true }) && (
       <div style={{ paddingTop: '20px', textAlign: 'center' }}>
-        <Login authToken={authToken} fetchAuthTokenActionsRequest={fetchUserActions} loginUser={loginUser} />
+        <Login authToken={authToken} fetchUserActions={fetchUserActions} loginUser={loginUser} />
       </div>
     )}
   </div>

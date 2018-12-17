@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Books from './Books';
-import Add from './Add';
+import Editable from './Editable';
 
 class Home extends Component {
   render() {
@@ -17,7 +17,7 @@ class Home extends Component {
                   <Books books={books} deleteBook={deleteBook} updateBookList={updateBookList} />
                 </td>
                 <td style={{ float: 'right', padding: '15px' }}>
-                  <Add modalTitle={'Add'} fetchBookActions={fetchBookActions} />
+                  <Editable modalTitle={'Add'} fetchBookActions={fetchBookActions} />
                 </td>
               </tr>
             </tbody>

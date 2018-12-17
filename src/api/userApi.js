@@ -1,4 +1,4 @@
-async function userAuthentication(payload) {
+async function userAuthenticationAPI(payload) {
   return {
     username: payload.username,
     redirectToHome: true,
@@ -7,4 +7,4 @@ async function userAuthentication(payload) {
   };
 }
 
-export { userAuthentication };
+export { userAuthenticationAPI };

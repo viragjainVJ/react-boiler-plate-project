@@ -59,6 +59,7 @@ function* validateAuthSaga({ payload }) {
     // if user is authenticated => cookie expired or deleted -> trigger logout user
     // if user is not authenticated -> trigger logout user to force a redirect to
     // login page by default
+    // TODO - Commented since authroization is not successful.
     //yield put(logoutUser());
   }
 }

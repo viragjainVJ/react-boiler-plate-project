@@ -1,5 +1,5 @@
 import { handleActions } from 'redux-actions';
-import { loginUser, loginUserRequest, fetchUserActions } from '../actions/userActions';
+import { loginUser, fetchUserActions } from '../actions/userActions';
 
 const initialState = {
   username: null,
@@ -13,17 +13,14 @@ const userReducer = handleActions(
     },
 
     [fetchUserActions.triggered]() {
-      console.log('fetchAuthTokenActions.triggered');
       return { ...initialState, tokenRequested: true };
     },
 
     [fetchUserActions.succeeded](state, { payload }) {
-      console.log('fetchAuthTokenActions.succeeded', payload);
       return { ...state, ...payload };
     },
 
     [fetchUserActions.failed]() {
-      console.log('fetchAuthTokenActions.failed');
       return initialState;
     }
   },

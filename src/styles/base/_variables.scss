@@ -59,10 +59,6 @@ $grid-gutter-width: 30px !default;
 // Variables
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
-$g
-// Color system
-
-
 // stylelint-disable
 $white: #fff !default;
 $gray-100: $smoke-white !default; // #f8f9fa !default;
@@ -258,7 +254,7 @@ $custom-select-height: rem(30px);
 $pagination-padding-y: rem(4.5px);
 $pagination-padding-x: rem(7.8px);
 $pagination-line-height: 16px;
-//
+$c
 $pagination-color: map_get($theme-colors, 'dark');
 // $pagination-bg:                     $white !default;
 $pagination-border-width: 0;
@@ -305,13 +301,12 @@ $modal-sm: 300px !default;
 // Customizes the `.table` component with basic values, each used across all table variations.
 $table-cell-padding: rem(7px 20px);
 // $table-cell-padding-sm:       .3rem !default;
-
-
 // $table-bg:                    transparent !default;
 $table-accent-bg: $table-even-bg-color;
 $table-hover-bg: $table-tr-hover-bg;
 // $table-active-bg:             $table-hover-bg !default;
-//
+
+
 // $table-border-width:          $border-width !default;
 $table-border-color: $gray-400;
 $table-head-bg: $smoke-white;

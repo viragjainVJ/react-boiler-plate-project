@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Add from './Add';
+import Editable from './Editable';
 
 class Book extends Component {
   onDelete = () => {
@@ -17,7 +17,7 @@ class Book extends Component {
             {title}, {author}
           </span>
           <div style={{ display: 'inline-block' }}>
-            <Add modalTitle={'Edit'} book={book} updateBookList={updateBookList} />
+            <Editable modalTitle={'Edit'} book={book} updateBookList={updateBookList} />
           </div>
           <button style={{ marginLeft: '5px' }} onClick={this.onDelete}>
             Delete
